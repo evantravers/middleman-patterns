@@ -1,0 +1,38 @@
+/*
+	This file is styling *just* for the pattern library itself. Your actual styles
+	will live in the patterns folder.
+*/
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+// this style is just to 
+.codeblock {
+	.CodeRay {
+		display: none;
+	}
+
+	&:before {
+		content: 'click to show code';
+
+		display: block;
+		padding: 10px;
+
+		text-align: center;
+	}
+
+	&.revealed {
+		.CodeRay {
+			display: block;
+		}
+
+		&:before {
+			content: 'click to hide code';
+		}
+	}
+}
+
+iframe.pattern {
+	border: 0;
+}

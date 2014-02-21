@@ -1,0 +1,25 @@
+doctype 5
+html
+  head
+    title Pattern Library
+    meta name="description" content=""
+    meta name="keywords" content=""
+    meta name="title" content=""
+    meta charset="utf-8"
+    link rel="author" href="humans.txt"
+
+    meta property="og:title" content=""
+    meta property="og:description" content=""
+    meta property="og:url" content=""
+    meta property="og:type" content="site"
+    meta property="og:site_name" content=""
+
+    meta name="viewport" content="width=device-width initial-scale=1.0"
+    
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700'
+    = stylesheet_link_tag 'coderay'
+    = stylesheet_link_tag 'style'
+    = javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'
+    = javascript_include_tag 'main'
+  body
+  	= yield
