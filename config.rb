@@ -1,7 +1,5 @@
 require 'slim'
 
-@patterns = Array.new
-
 # Set slim-lang output style
 Slim::Engine.set_default_options :pretty => true
 # Set template languages
@@ -19,6 +17,7 @@ activate :directory_indexes
 
 # collect all the patterns in the app
 # TODO this needs to not be slim specific, and needs to be recursive
+
 @patterns = Dir["source/patterns/**/*.slim"]
 
 @patterns.each do |pattern|
