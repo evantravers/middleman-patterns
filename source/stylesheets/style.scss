@@ -34,5 +34,10 @@ body {
 }
 
 iframe.pattern {
-	border: 0;
+	width: 100%;
+
+	border-top: 1px solid whitesmoke;
+	border-bottom: 1px solid whitesmoke;
+	border-left: 0;
+	border-right: 0;
 }
