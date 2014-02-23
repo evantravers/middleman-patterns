@@ -1,0 +1,26 @@
+@import 'libraries/libraries';
+
+$primarycolor: #19214a;
+
+body {
+	font-family: 'Noto Serif', serif;
+}
+
+a {
+	color: $primarycolor;
+	&:hover { color: lighten($primarycolor, 20%); }
+	&:visited { color: darken($primarycolor, 20%); }
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+// generate header sizes
+@for $i from 1 through 6 {
+	h#{$i} {
+		margin-bottom: golden-ratio(.05em, 6-$i);
+
+		font-size: golden-ratio(.4em, 6-$i);
+	}
+}
