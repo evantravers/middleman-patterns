@@ -39,7 +39,7 @@ helpers do
   def pattern(name)
     <<-eos
       <h1>#{name}</h1>
-      <iframe src='patterns/#{name}' sandbox='allow-same-origin allow-scripts' class='pattern'>
+      <iframe src='patterns/#{name}' sandbox='allow-same-origin allow-scripts' scrolling='no' class='pattern'>
         #{partial("patterns/#{name}")}
       </iframe>
       #{code(name)}

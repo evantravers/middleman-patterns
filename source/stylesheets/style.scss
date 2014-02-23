@@ -33,11 +33,12 @@ body {
 	}
 }
 
+h1 {
+	border-bottom: 1px solid whitesmoke;
+}
+
 iframe.pattern {
 	width: 100%;
 
-	border-top: 1px solid whitesmoke;
-	border-bottom: 1px solid whitesmoke;
-	border-left: 0;
-	border-right: 0;
+	border: 0;
 }
