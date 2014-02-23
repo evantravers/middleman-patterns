@@ -20,7 +20,7 @@ activate :directory_indexes
 @patterns = Dir["source/patterns/**/*.slim"]
 
 @patterns.each do |pattern|
-  proxy "/patterns/#{String(pattern.match(/_(.*)\.slim/)[1])}.html", "pattern.html", layout: 'pattern_layout', ignore: true, locals: {html: Tilt[:slim].new(pattern).render}
+  proxy "/patterns/#{String(pattern.match(/_(.*)\.slim/)[1])}.html", "pattern.html", layout: 'pattern_bare', ignore: true, locals: {html: Tilt[:slim].new(pattern).render}
 end
 
 ###
