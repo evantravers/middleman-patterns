@@ -17,11 +17,10 @@ activate :directory_indexes
 
 # collect all the patterns in the app
 # TODO this needs to not be slim specific, and needs to be recursive
-
 @patterns = Dir["source/patterns/**/*.slim"]
 
 @patterns.each do |pattern|
-  proxy "/patterns/#{String(pattern.match(/_(.*)\.slim/)[1])}.html", "pattern.html", layout: false, ignore: true, locals: {html: Tilt[:slim].new(pattern).render}
+  proxy "/patterns/#{String(pattern.match(/_(.*)\.slim/)[1])}.html", "pattern.html", layout: 'pattern_layout', ignore: true, locals: {html: Tilt[:slim].new(pattern).render}
 end
 
 ###
