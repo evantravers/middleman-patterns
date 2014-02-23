@@ -38,7 +38,7 @@ helpers do
   # needs to be an iframe to isolate the js/css
   def pattern(name)
     <<-eos
-      <h1>#{name}</h1>
+      <h3>#{name}</h3>
       <iframe src='patterns/#{name}' sandbox='allow-same-origin allow-scripts' scrolling='no' class='pattern'>
         #{partial("patterns/#{name}")}
       </iframe>
