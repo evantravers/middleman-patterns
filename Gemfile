@@ -15,3 +15,4 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 
 # for try_static
 gem "rack-contrib"
+gem "thin"
