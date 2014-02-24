@@ -1,0 +1,9 @@
+input {
+	@extend %bordered;
+
+	padding: .5em 1em;
+
+	@include media($mobile) {
+		width: 100%;
+	}
+}
