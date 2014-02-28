@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	$('iframe').iFrameResize({
-		log: true
+		log: true,
+		contentWindowBodyMargin: 0
 	});
 
 
@@ -8,4 +9,3 @@ $(document).ready(function() {
 			$(this).toggleClass('revealed');
 	});
 });
-
