@@ -14,18 +14,21 @@ span.CodeRay { white-space: pre; border: 0px; padding: 2px }
 
 table.CodeRay { border-collapse: collapse; width: 100%; padding: 2px }
 table.CodeRay td {
-  padding: 1em 0.5em;
+  padding: 0 0.5em;
   vertical-align: top;
 }
 
 .CodeRay .line-numbers, .CodeRay .no {
-  background-color: #ECECEC;
+  background-color: white;
+  border-left: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
   color: #AAA;
   text-align: right;
 }
 
 .CodeRay .line-numbers a {
   color: #AAA;
+  text-decoration: none;
 }
 
 .CodeRay .line-numbers tt { font-weight: bold }

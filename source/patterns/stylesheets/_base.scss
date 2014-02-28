@@ -22,6 +22,8 @@ a {
 
 p {
 	margin-bottom: 1em;
+
+	line-height: 1.5em;
 }
 
 // generate header sizes
@@ -30,5 +32,6 @@ p {
 		margin-bottom: golden-ratio(.05em, 6-$i);
 
 		font-size: golden-ratio(.4em, 6-$i);
+		letter-spacing: 0.05em;
 	}
 }

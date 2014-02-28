@@ -14,10 +14,14 @@ body {
 	}
 }
 
-// this style is just to 
+// this style is just to
 .codeblock {
 	.CodeRay {
 		display: none;
+	}
+
+	table {
+		pointer-events: none;
 	}
 
 	&:before {
@@ -41,7 +45,7 @@ body {
 }
 
 h3 {
-	border-bottom: 1px solid whitesmoke;
+	border-bottom: 1px solid lightgray;
 }
 
 iframe.pattern {
